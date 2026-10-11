@@ -1,0 +1,6 @@
+data "oci_core_compute_global_image_capability_schema" "core_compute_global_image_capability_schema_lookup" {
+  for_each = var.core_compute_global_image_capability_schema_lookup
+
+  compute_global_image_capability_schema_id = each.value.compute_global_image_capability_schema_id
+}
+
